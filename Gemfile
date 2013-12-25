@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 gem "googlebooks", "~> 0.0.8"
+gem "geocoder"
+gem 'dynamic_form'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -11,6 +13,9 @@ gem "googlebooks", "~> 0.0.8"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'twitter-bootstrap-rails'
+  gem "less-rails"
+  gem 'therubyracer'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -26,6 +31,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem "nifty-generators"
 end
 
 # To use ActiveModel has_secure_password
@@ -42,3 +48,5 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test
