@@ -1,13 +1,5 @@
-Apisample::Application.routes.draw do
-  get "welcome/index"
-
+APIMashup::Application.routes.draw do
   resources :locations
-
-  resource :session do
-    collection do
-      get 'callback'
-    end
-  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -22,7 +14,6 @@ Apisample::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  r#esources :books
 
   # Sample resource route with options:
   #   resources :products do
@@ -59,7 +50,7 @@ Apisample::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'welcome#index'
+  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

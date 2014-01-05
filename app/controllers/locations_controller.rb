@@ -1,15 +1,10 @@
 class LocationsController < ApplicationController
   def index
-    if params[:search].present?
-      @locations = Location.near(params[:search], 50, :order => :distance)
-    else
-      @locations = Location.all
-    end
+    @locations = Location.all
   end
 
   def show
-    @location = Location.find(params[:id])
-    @venues = foursquare.venues.search(:query => params[:name], :ll => @location.latitude + @location.longitude)
+   @location = Location.find(params[:id])
   end
 
   def new
@@ -43,5 +38,4 @@ class LocationsController < ApplicationController
     @location.destroy
     redirect_to locations_url, :notice => "Successfully destroyed location."
   end
-
 end
