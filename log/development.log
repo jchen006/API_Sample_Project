@@ -3569,3 +3569,140 @@ Served asset /welcome.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 22:39:36 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-04 13:44:20 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (130.3ms)
+  Rendered locations/new.html.erb within layouts/application (161.4ms)
+Completed 200 OK in 779ms (Views: 566.8ms | ActiveRecord: 48.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /application.css - 200 OK (48ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /books.css - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /welcome.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /jquery_ujs.js - 200 OK (36ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (22ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:22 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /twitter/bootstrap.js - 200 OK (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /books.js - 200 OK (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /welcome.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 13:44:23 -0800
+Served asset /application.js - 200 OK (32ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-04 13:45:00 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FSH3L62HmqEEudFS6udXF9r2ETW13nOf7uqvw978kSc=", "location"=>{"address"=>"Eiffel Tower ", "latitude"=>"48.8582", "longitude"=>"2.2945"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (156.0ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "Eiffel Tower "], ["created_at", Sat, 04 Jan 2014 21:45:00 UTC +00:00], ["latitude", 48.8582285], ["longitude", 2.2943877], ["updated_at", Sat, 04 Jan 2014 21:45:00 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/6
+Completed 302 Found in 817ms (ActiveRecord: 160.8ms)
+
+
+Started GET "/locations/6" for 127.0.0.1 at 2014-01-04 13:45:00 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "6"]]
+Completed 500 Internal Server Error in 57ms
+
+NameError (undefined local variable or method `foursquare' for #<LocationsController:0x007fd064118b18>):
+  app/controllers/locations_controller.rb:12:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

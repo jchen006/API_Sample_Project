@@ -9,6 +9,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
+    @venues = foursquare.venues.search(:query => params[:name], :ll => @location.latitude + @location.longitude)
   end
 
   def new

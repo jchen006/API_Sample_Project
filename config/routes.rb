@@ -3,6 +3,12 @@ Apisample::Application.routes.draw do
 
   resources :locations
 
+  resource :session do
+    collection do
+      get 'callback'
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -16,7 +22,7 @@ Apisample::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :books
+  r#esources :books
 
   # Sample resource route with options:
   #   resources :products do
