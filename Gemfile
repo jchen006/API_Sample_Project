@@ -17,6 +17,7 @@ gem 'quimby'
 gem "json"
 gem "typhoeus"
 gem "quimby"
+# gem "haml"
 
 
 # Gems used only for assets and not required
