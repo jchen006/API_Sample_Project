@@ -1823,3 +1823,1142 @@ Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 18:45:32 -0800
 Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 20:59:27 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (26.4ms)
+  Rendered locations/new.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 455ms (Views: 365.5ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /application.css - 200 OK (26ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:28 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (27ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /twitter/bootstrap.js - 200 OK (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:29 -0800
+Served asset /application.js - 200 OK (25ms)
+
+
+Started GET "/auth/foursquare" for 127.0.0.1 at 2014-01-05 20:59:31 -0800
+
+
+Started GET "/auth/foursquare/callback?code=PFEXTORMPUJO33QYU1OJZCJ4HHKFQ4DQWXUVWRSMR4LCMSEW&state=a3ae60e657d0e72a40206c4b1d70fd2bde2cdab96e947d3b" for 127.0.0.1 at 2014-01-05 20:59:32 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"PFEXTORMPUJO33QYU1OJZCJ4HHKFQ4DQWXUVWRSMR4LCMSEW", "state"=>"a3ae60e657d0e72a40206c4b1d70fd2bde2cdab96e947d3b", "provider"=>"foursquare"}
+  [1m[36mUser Load (16.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'foursquare' AND "users"."uid" = '75270790' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 107ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 20:59:33 -0800
+Served asset /rails.png - 304 Not Modified (11ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.1ms)
+  Rendered locations/new.html.erb within layouts/application (37.1ms)
+  [1m[35mUser Load (23.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 110ms (Views: 85.7ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:38 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:39 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-01-05 20:59:40 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 20:59:40 -0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (3.1ms)
+  Rendered locations/new.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 20:59:44 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/foursquare" for 127.0.0.1 at 2014-01-05 20:59:58 -0800
+
+
+Started GET "/auth/foursquare/callback?code=IR5XXB4CRKFGXXKQQ31QUD0WL3TKUQXGU32U4WQ21YTID1GE&state=07f7b7e8038d342e8a865b4af9dcbd21442987d8d3760992" for 127.0.0.1 at 2014-01-05 20:59:59 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"IR5XXB4CRKFGXXKQQ31QUD0WL3TKUQXGU32U4WQ21YTID1GE", "state"=>"07f7b7e8038d342e8a865b4af9dcbd21442987d8d3760992", "provider"=>"foursquare"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'foursquare' AND "users"."uid" = '75270790' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 21:00:00 -0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (3.3ms)
+  Rendered locations/new.html.erb within layouts/application (16.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 21:00:04 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 21:03:29 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (13.2ms)
+  Rendered locations/new.html.erb within layouts/application (17.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 209ms (Views: 194.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:30 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:33 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 21:03:34 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 22:05:22 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (56.6ms)
+  Rendered locations/new.html.erb within layouts/application (81.1ms)
+  [1m[36mUser Load (18.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 658ms (Views: 503.6ms | ActiveRecord: 83.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /jquery_ujs.js - 200 OK (11ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap.js - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:23 -0800
+Served asset /application.js - 200 OK (17ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 22:05:26 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.0ms)
+  Rendered locations/new.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:26 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:26 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:27 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 22:05:29 -0800
+Served asset /rails.png - 200 OK (6ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.3ms)
+  Rendered locations/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 22:05:36 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-01-05 22:05:39 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (7.9ms)
+  Rendered locations/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 22:07:24 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/auth/foursquare" for 127.0.0.1 at 2014-01-05 22:07:27 -0800
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 22:09:29 -0800
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/sesssions/new" for 127.0.0.1 at 2014-01-05 22:09:33 -0800
+
+ActionController::RoutingError (No route matches [GET] "/sesssions/new"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jchen/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jchen/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jchen/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/sesssions/create" for 127.0.0.1 at 2014-01-05 22:10:03 -0800
+
+ActionController::RoutingError (No route matches [GET] "/sesssions/create"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jchen/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jchen/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jchen/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 22:19:03 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (87.3ms)
+  Rendered locations/new.html.erb within layouts/application (114.4ms)
+Completed 200 OK in 558ms (Views: 410.2ms | ActiveRecord: 56.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /bootstrap_and_overrides.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:05 -0800
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/auth/foursquare" for 127.0.0.1 at 2014-01-05 22:19:07 -0800
+
+
+Started GET "/auth/foursquare/callback?code=ZDGKS2LIFHXBOAX1THGTITIIYE0Y3HE2Y2E35YJU2YHCCTT0&state=ec8285ce1ff51f403b980e20e6d8685bb956b7134b620c68" for 127.0.0.1 at 2014-01-05 22:19:07 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"ZDGKS2LIFHXBOAX1THGTITIIYE0Y3HE2Y2E35YJU2YHCCTT0", "state"=>"ec8285ce1ff51f403b980e20e6d8685bb956b7134b620c68", "provider"=>"foursquare"}
+  [1m[36mUser Load (10.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'foursquare' AND "users"."uid" = '75270790' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 22:19:09 -0800
+Served asset /rails.png - 304 Not Modified (18ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (3.1ms)
+  Rendered locations/new.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (18.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 13.1ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 22:19:18 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-01-05 22:19:28 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-05 22:19:28 -0800
+Served asset /rails.png - 304 Not Modified (0ms)
