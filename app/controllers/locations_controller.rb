@@ -42,4 +42,12 @@ class LocationsController < ApplicationController
     @location.destroy
     redirect_to locations_url, :notice => "Successfully destroyed location."
   end
+
+  def venues_search 
+     @location = Location.find(params[:id])
+     if params[:name]
+        @venues = foursquare.venues.search(:query => params[:name], :ll => @location.longitude + @location.latitude)
+      end
+  end 
+
 end

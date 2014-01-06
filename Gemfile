@@ -13,6 +13,10 @@ gem "less-rails"
 gem 'therubyracer'
 gem 'omniauth'
 gem 'omniauth-foursquare'
+gem 'quimby'
+gem "json"
+gem "typhoeus"
+gem "quimby"
 
 
 # Gems used only for assets and not required

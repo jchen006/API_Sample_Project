@@ -9,7 +9,7 @@
 <body>
 
 <% if current_user %>
-  Welcome <%= current_user.name %>!
+  Welcome <%= current_user.name %>! You have signed in with <%= current_user.provider %>. 
   <%= link_to "Sign Out", signout_path %>
 <% else %>
   <%= link_to "Sign in with FourSquare", "/auth/foursquare" %>
