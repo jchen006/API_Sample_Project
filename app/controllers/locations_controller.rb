@@ -9,6 +9,8 @@ class LocationsController < ApplicationController
 
   def show
    @location = Location.find(params[:id])
+   # @ll = @location.longitude.to_s + @location.latitude.to_s
+   # @venues = foursquare.venues.search(:query => @location.venue, :ll => @ll)
   end
 
   def new
@@ -17,6 +19,7 @@ class LocationsController < ApplicationController
 
   def create
     @location = Location.new(params[:location])
+
     if @location.save
       redirect_to @location, :notice => "Successfully created location."
     else
@@ -43,11 +46,12 @@ class LocationsController < ApplicationController
     redirect_to locations_url, :notice => "Successfully destroyed location."
   end
 
-  def venues_search 
-     @location = Location.find(params[:id])
-     if params[:name]
-        @venues = foursquare.venues.search(:query => params[:name], :ll => @location.longitude + @location.latitude)
-      end
-  end 
+  # def venues_search 
+  #    @location = Location.find(params[:id])
+  #    @ll = @location.longitude.to_s + @location.latitude.to_s
+  #    if params[:name]
+  #       @venues = foursquare.venues.search(:query => params[:name], :ll => @ll)
+  #     end
+  # end 
 
 end

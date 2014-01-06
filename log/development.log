@@ -6278,3 +6278,485 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-05 23:20:02 -0800
 Served asset /welcome.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-05 23:51:48 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"address"=>"", "latitude"=>"47.34", "longitude"=>"-0.001"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (74.1ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", ""], ["created_at", Mon, 06 Jan 2014 07:51:49 UTC +00:00], ["latitude", 47.34], ["longitude", -0.001], ["updated_at", Mon, 06 Jan 2014 07:51:49 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/3
+Completed 302 Found in 253ms (ActiveRecord: 101.1ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2014-01-05 23:51:49 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 47.34) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -0.001) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 47.34 AND locations.longitude >= -0.001) THEN 45.0 WHEN (locations.latitude < 47.34 AND locations.longitude >= -0.001) THEN 135.0 WHEN (locations.latitude < 47.34 AND locations.longitude < -0.001) THEN 225.0 WHEN (locations.latitude >= 47.34 AND locations.longitude < -0.001) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 47.195268216889154 AND 47.48473178311085 AND locations.longitude BETWEEN -0.2145800841087334 AND 0.21258008410873339 AND locations.id != 3) ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (35.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 619ms (Views: 616.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 23:51:50 -0800
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"address"=>"Lynbrook High School, CA", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "Lynbrook High School, CA"], ["created_at", Mon, 06 Jan 2014 07:52:15 UTC +00:00], ["latitude", 37.2997029], ["longitude", -122.0034684], ["updated_at", Mon, 06 Jan 2014 07:52:15 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/4
+Completed 302 Found in 633ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 37.2997029) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -122.0034684) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 37.2997029 AND locations.longitude >= -122.0034684) THEN 45.0 WHEN (locations.latitude < 37.2997029 AND locations.longitude >= -122.0034684) THEN 135.0 WHEN (locations.latitude < 37.2997029 AND locations.longitude < -122.0034684) THEN 225.0 WHEN (locations.latitude >= 37.2997029 AND locations.longitude < -122.0034684) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 37.15497111688915 AND 37.44443468311085 AND locations.longitude BETWEEN -122.18541187753821 AND -121.82152492246179 AND locations.id != 4) ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:15 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 23:52:16 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (12.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLocations (20140105193928)
+Migrating to CreateUsers (20140106020134)
+Migrating to AddVenueToLocations (20140106075437)
+  [1m[35m (9.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  ALTER TABLE "locations" ADD "venue" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140106075437')[0m
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-05 23:55:18 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (86.3ms)
+  Rendered locations/new.html.erb within layouts/application (107.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 182ms (Views: 171.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:19 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-05 23:55:27 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"address"=>"Lynbrook High School, CA", "latitude"=>"", "longitude"=>"", "venue"=>"food"}, "commit"=>"Create Location"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: venue):
+  app/controllers/locations_controller.rb:21:in `new'
+  app/controllers/locations_controller.rb:21:in `create'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"address"=>"Lynbrook High School, CA", "latitude"=>"", "longitude"=>"", "venue"=>"food"}, "commit"=>"Create Location"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "updated_at", "venue") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", "Lynbrook High School, CA"], ["created_at", Mon, 06 Jan 2014 07:55:39 UTC +00:00], ["latitude", 37.2997029], ["longitude", -122.0034684], ["updated_at", Mon, 06 Jan 2014 07:55:39 UTC +00:00], ["venue", "food"]]
+  [1m[35m (19.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations/5
+Completed 302 Found in 172ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/locations/5" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mLocation Load (0.4ms)[0m  SELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 37.2997029) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -122.0034684) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 37.2997029 AND locations.longitude >= -122.0034684) THEN 45.0 WHEN (locations.latitude < 37.2997029 AND locations.longitude >= -122.0034684) THEN 135.0 WHEN (locations.latitude < 37.2997029 AND locations.longitude < -122.0034684) THEN 225.0 WHEN (locations.latitude >= 37.2997029 AND locations.longitude < -122.0034684) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 37.15497111688915 AND 37.44443468311085 AND locations.longitude BETWEEN -122.18541187753821 AND -121.82152492246179 AND locations.id != 5) ORDER BY distance ASC
+  Rendered locations/show.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:39 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 23:55:40 -0800
+Served asset /application.js - 304 Not Modified (0ms)
