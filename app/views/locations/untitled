@@ -1,0 +1,7 @@
+<!-- <h3> Venue Searches </h3>
+<ul>
+<% if @venues %>
+  <% @venues["places"].each do |venue| %>
+    <li><%= link_to venue.name, venue_details_examples_path(:venue_id => venue.id) %></li>
+<% end %>
+</ul> -->

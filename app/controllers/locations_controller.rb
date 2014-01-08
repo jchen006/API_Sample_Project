@@ -9,8 +9,8 @@ class LocationsController < ApplicationController
 
   def show
    @location = Location.find(params[:id])
-   # @ll = @location.longitude.to_s + @location.latitude.to_s
-   # @venues = foursquare.venues.search(:query => @location.venue, :ll => @ll)
+   @ll = @location.longitude.to_s + ","+ @location.latitude.to_s
+   @venues = foursquare.venues.search(:query => @location.venue, :ll => @ll)
   end
 
   def new
@@ -19,7 +19,7 @@ class LocationsController < ApplicationController
 
   def create
     @location = Location.new(params[:location])
-
+    #Need to migrate a string 
     if @location.save
       redirect_to @location, :notice => "Successfully created location."
     else
