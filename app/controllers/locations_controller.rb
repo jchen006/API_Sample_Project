@@ -5,16 +5,6 @@ class LocationsController < ApplicationController
 
   def show
    @location = Location.find(params[:id])
-   @client = GooglePlaces::Client.new("AIzaSyCbq5JAKHry5HROLhySw3r2BCIkPBlG5cc")
-   # lat = @location.latitude.to_s
-   # long = @location.longitude.to_s
-   # @places = @client.spots(long, lat)
-   # @places = @client.spots(-33.8670522, 151.1957362) 
-   # @places = @client.spots(37.2864379, -122.024625, :types => 'restaurant')
-   @places = @client.spots(@location.latitude, @location.longitude, :types => @location.types)
-   for spot in @places
-      puts spot.name
-    end 
   end
 
   def new
@@ -23,6 +13,9 @@ class LocationsController < ApplicationController
 
   def create
     @location = Location.new(params[:location])
+    @client = GooglePlaces::Client.new("AIzaSyCbq5JAKHry5HROLhySw3r2BCIkPBlG5cc")
+    @location.places = @client.spots(@location.latitude, @location.longitude)
+    puts @location.places
     if @location.save
       redirect_to @location, :notice => "Successfully created location."
     else

@@ -18,12 +18,10 @@
   <dd><%= @location.types %></dd>
 </dl>
 
-<ul>
-<% @places.each do |place| %> 
+<% @location.places do |place| %> 
   <li> <%= place.name %> </li>
+  <li> <%= place.formatted_address %></li>
 <% end %>
-</ul>
-
 
 
 <div class="form-actions">
