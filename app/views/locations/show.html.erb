@@ -12,13 +12,10 @@
   <dd><%= @location.latitude %></dd>
   <dt><strong><%= model_class.human_attribute_name(:longitude) %>:</strong></dt>
   <dd><%= @location.longitude %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:places) %>:</strong></dt>
-  <dd><%= @location.places %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:types) %>:</strong></dt>
-  <dd><%= @location.types %></dd>
 </dl>
 
-<% @location.places do |place| %> 
+<h3> Recommendations based on <%= @location.types %> </h3>
+<% Places.where(location_id = @location.id) do |place|%> 
   <li> <%= place.name %> </li>
   <li> <%= place.formatted_address %></li>
 <% end %>
