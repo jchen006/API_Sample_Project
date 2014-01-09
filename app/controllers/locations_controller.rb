@@ -10,7 +10,11 @@ class LocationsController < ApplicationController
    # long = @location.longitude.to_s
    # @places = @client.spots(long, lat)
    # @places = @client.spots(-33.8670522, 151.1957362) 
-   @places = @client.spots(37.2864379, -122.024625, :types => 'restaurant')
+   # @places = @client.spots(37.2864379, -122.024625, :types => 'restaurant')
+   @places = @client.spots(@location.latitude, @location.longitude, :types => @location.types)
+   for spot in @places
+      puts spot.name
+    end 
   end
 
   def new
