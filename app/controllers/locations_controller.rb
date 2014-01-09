@@ -21,8 +21,9 @@ class LocationsController < ApplicationController
       for spot in @location.places
          @place = Places.new()
          @place.name = spot.name
-         @place.address = spot.formatted_address
-         @place.location_id = @location.id
+         # @place.address = spot.formatted_address
+         # @place.location_id = @location.id
+         # @place.phone = spot.formatted_phone_number
          @place.save
       end
       redirect_to @location, :notice => "Successfully created location."

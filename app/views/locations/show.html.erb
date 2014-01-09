@@ -15,9 +15,10 @@
 </dl>
 
 <h3> Recommendations based on <%= @location.types %> </h3>
-<% Places.where(location_id = @location.id) do |place|%> 
+<%= Places.where(location_id = @location.id).each do |place| %>
   <li> <%= place.name %> </li>
-  <li> <%= place.formatted_address %></li>
+  <li> <%= place.address %> </li>
+  <li> <%= place.phone %> </li>
 <% end %>
 
 
