@@ -1064,3 +1064,74 @@ Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-08 20:11:57 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2014-01-08 20:16:21 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 39ms
+
+NameError (uninitialized constant LocationsController::AIzaSyD5i2AC5JHNBxRSx_hQ2qDpLjX58uXyTfg):
+  app/controllers/locations_controller.rb:8:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2014-01-08 20:20:07 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 159ms
+
+NameError (uninitialized constant LocationsController::AIzaSyD5i2AC5JHNBxRSx_hQ2qDpLjX58uXyTfg):
+  app/controllers/locations_controller.rb:8:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.1ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2014-01-08 20:20:09 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant LocationsController::AIzaSyD5i2AC5JHNBxRSx_hQ2qDpLjX58uXyTfg):
+  app/controllers/locations_controller.rb:8:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-08 20:20:13 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"address"=>"12622 Lido Way, Saratoga, CA", "latitude"=>"", "longitude"=>"", "places"=>"Food"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (111.0ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "places", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", "12622 Lido Way, Saratoga, CA"], ["created_at", Thu, 09 Jan 2014 04:20:13 UTC +00:00], ["latitude", 37.2864379], ["longitude", -122.024625], ["places", "Food"], ["updated_at", Thu, 09 Jan 2014 04:20:13 UTC +00:00]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/4
+Completed 302 Found in 749ms (ActiveRecord: 115.1ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-08 20:20:13 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "4"]]
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant LocationsController::AIzaSyD5i2AC5JHNBxRSx_hQ2qDpLjX58uXyTfg):
+  app/controllers/locations_controller.rb:8:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
