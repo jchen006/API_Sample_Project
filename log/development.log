@@ -9255,3 +9255,1478 @@ Migrating to AddNameToLocatons (20140109094348)
   [1m[35m (0.2ms)[0m  ALTER TABLE "locatons" ADD "name" varchar(255)
 SQLite3::SQLException: no such table: locatons: ALTER TABLE "locatons" ADD "name" varchar(255)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (38.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLocations (20140105193928)
+Migrating to AddTypesToLocations (20140109073435)
+Migrating to AddPlacesToLocations (20140109080727)
+Migrating to CreatePlaces (20140109083944)
+Migrating to AddPhoneToPlaces (20140109093255)
+Migrating to AddNameToLocations (20140109094624)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "locations" ADD "name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140109094624')[0m
+  [1m[35m (17.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2014-01-09 01:47:57 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Location with id=1):
+  app/controllers/locations_controller.rb:7:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.5ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (9.6ms)
+  Rendered locations/new.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 108ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:03 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:04 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (4.7ms)
+  Rendered locations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:22 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 01:48:23 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 01:48:36 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home", "address"=>"12622 Lido Way, Saratoga, 95070", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name):
+  app/controllers/locations_controller.rb:16:in `new'
+  app/controllers/locations_controller.rb:16:in `create'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 01:48:54 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home", "address"=>"12622 Lido Way, Saratoga, 95070", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (27.6ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "name", "places", "types", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "12622 Lido Way, Saratoga, 95070"], ["created_at", Thu, 09 Jan 2014 09:48:54 UTC +00:00], ["latitude", 37.2864379], ["longitude", -122.024625], ["name", "Home"], ["places", nil], ["types", "food"], ["updated_at", Thu, 09 Jan 2014 09:48:54 UTC +00:00]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Peet's Coffee & Tea"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (13.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Jakes of Saratoga"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "coach house liquor"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Starbucks"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Mountain Mike's Pizza - Saratoga"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Safeway"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Chicken Salsa"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Starbucks"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Saratoga Bagels"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Togo's"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Kikusushi Japanese Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Los Dos Compadres 2"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Stop N Save"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (14.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Oriental Gourmet Chinese"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Louisiana Smokehouse"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Sogo Tofu"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Taiwan Taste"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00], ["location_id", nil], ["name", "Fast Pizza"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:48:55 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 699ms (ActiveRecord: 138.1ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2014-01-09 01:48:55 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered locations/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 69ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <%- model_class = @Location.name -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+    4: </div>
+  app/views/locations/show.html.erb:1:in `_app_views_locations_show_html_erb___2515172971613361696_70240736246820'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2014-01-09 01:49:11 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered locations/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `model_name' for "Home":String):
+    1: <%- model_class = @location.name -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+    4: </div>
+    5: 
+    6: <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+  app/views/locations/show.html.erb:3:in `_app_views_locations_show_html_erb___2515172971613361696_70240738597680'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2014-01-09 01:49:52 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered locations/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `name_name' for #<Location:0x007fc463eda448>):
+    1: <%- model_class = Location -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', :default => @location.name_name.human.titleize %></h1>
+    4: </div>
+    5: 
+    6: <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+  app/views/locations/show.html.erb:3:in `_app_views_locations_show_html_erb___2515172971613361696_70240756002280'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2014-01-09 01:50:04 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered locations/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `key?' for "Home":String):
+    1: <%- model_class = Location -%>
+    2: <div class="page-header">
+    3:   <h1><%=t '.title', @location.name %></h1>
+    4: </div>
+    5: 
+    6: <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+  app/views/locations/show.html.erb:3:in `_app_views_locations_show_html_erb___2515172971613361696_70240740002400'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.1ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.4ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPlaces Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE (1)[0m
+  Rendered locations/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 01:50:25 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-01-09 01:57:57 -0800
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (6.6ms)
+  Rendered locations/new.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 81ms (Views: 62.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 01:57:58 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 01:58:14 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home base", "address"=>"2501 Benvenue Ave., Berkeley, CA", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "name", "places", "types", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "2501 Benvenue Ave., Berkeley, CA"], ["created_at", Thu, 09 Jan 2014 09:58:14 UTC +00:00], ["latitude", 37.8653073], ["longitude", -122.2549191], ["name", "Home base"], ["places", nil], ["types", "food"], ["updated_at", Thu, 09 Jan 2014 09:58:14 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (22.1ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Caffe Mediterraneum"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Yogurtland"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Gather"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "International House Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Starbucks"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "CREAM"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Rick & Ann's Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (24.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Ici"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (6.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Cinnaholic"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Trattoria La Siciliana"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (6.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Fat Slice Pizza"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Saturn Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Pasta Bene"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Joshu-ya Brasserie"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (5.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Chipotle Mexican Grill"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Elmwood Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (5.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Le Bateau Ivre Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Finfine' Ethiopian Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Cafe Durant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00], ["location_id", 2], ["name", "Top Dog"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:15 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations/2
+Completed 302 Found in 846ms (ActiveRecord: 154.3ms)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mPlaces Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE (2)
+  Rendered locations/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:15 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:16 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:16 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:16 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:16 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:16 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:16 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-01-09 01:58:21 -0800
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 01:58:33 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home base", "address"=>"2501 Benvenue Ave., Berkeley, CA", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "name", "places", "types", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "2501 Benvenue Ave., Berkeley, CA"], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["latitude", 37.8653073], ["longitude", -122.2549191], ["name", "Home base"], ["places", nil], ["types", "food"], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Caffe Mediterraneum"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[35m (23.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Yogurtland"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Gather"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "International House Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Starbucks"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "CREAM"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Rick & Ann's Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Ici"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Cinnaholic"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Trattoria La Siciliana"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Fat Slice Pizza"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00], ["location_id", 3], ["name", "Saturn Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:33 UTC +00:00]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Pasta Bene"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Joshu-ya Brasserie"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Chipotle Mexican Grill"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Elmwood Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Le Bateau Ivre Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Finfine' Ethiopian Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Cafe Durant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (36.6ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00], ["location_id", 3], ["name", "Top Dog"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 09:58:34 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/3
+Completed 302 Found in 763ms (ActiveRecord: 166.7ms)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mPlaces Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE (3)[0m
+  Rendered locations/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 01:58:34 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 02:08:17 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home base", "address"=>"2501 Benvenue Ave., Berkeley, CA", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (71.4ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "name", "places", "types", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "2501 Benvenue Ave., Berkeley, CA"], ["created_at", Thu, 09 Jan 2014 10:08:17 UTC +00:00], ["latitude", 37.8653073], ["longitude", -122.2549191], ["name", "Home base"], ["places", nil], ["types", "food"], ["updated_at", Thu, 09 Jan 2014 10:08:17 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations/4
+Completed 302 Found in 1079ms (ActiveRecord: 85.0ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered locations/show.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:18 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 02:08:19 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.5ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered locations/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 71ms (Views: 47.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 02:11:28 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-09 02:15:48 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered locations/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 216ms (Views: 190.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:49 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 02:15:56 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home base", "address"=>"UC Berkeley", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (24.6ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "name", "places", "types", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "UC Berkeley"], ["created_at", Thu, 09 Jan 2014 10:15:56 UTC +00:00], ["latitude", 37.8739132], ["longitude", -122.2505629], ["name", "Home base"], ["places", nil], ["types", "food"], ["updated_at", Thu, 09 Jan 2014 10:15:56 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations/5
+Completed 302 Found in 1177ms (ActiveRecord: 28.1ms)
+
+
+Started GET "/locations/5" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered locations/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 02:15:57 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/5" for 127.0.0.1 at 2014-01-09 02:21:10 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mPlaces Load (43.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE (5)[0m
+  Rendered locations/show.html.erb within layouts/application (191.7ms)
+Completed 200 OK in 348ms (Views: 254.5ms | ActiveRecord: 76.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 02:21:11 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-09 02:22:35 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"name"=>"Home base", "address"=>"Carnegie Mellon University", "latitude"=>"", "longitude"=>"", "types"=>"food"}, "commit"=>"Create Location"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (30.3ms)[0m  [1mINSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "name", "places", "types", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "Carnegie Mellon University"], ["created_at", Thu, 09 Jan 2014 10:22:35 UTC +00:00], ["latitude", 40.4424925], ["longitude", -79.9425528], ["name", "Home base"], ["places", nil], ["types", "food"], ["updated_at", Thu, 09 Jan 2014 10:22:35 UTC +00:00]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Mad Mex"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Union Grill"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (6.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Shady Grove"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "The Coffee Tree Roasters"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Legume"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Girasole"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Starbucks"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "The Porch at Schenley"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "China Palace"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Ali Baba Restaurant"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (5.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "SUBWAY® Restaurants"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Lucca Ristorante & Wine Bar"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Sushi Too"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Lulu's Noodles"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Cappy's Cafe'"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Kohli's Indian Imports"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (21.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Eatunique"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Sphinx Cafe"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Razzy Fresh"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("address", "created_at", "location_id", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["created_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00], ["location_id", nil], ["name", "Food For Thought Deli"], ["phone", nil], ["updated_at", Thu, 09 Jan 2014 10:22:36 UTC +00:00]]
+  [1m[35m (4.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations/6
+Completed 302 Found in 837ms (ActiveRecord: 168.4ms)
+
+
+Started GET "/locations/6" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mPlaces Load (0.6ms)[0m  SELECT "places".* FROM "places" WHERE (6)
+  Rendered locations/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-09 02:22:36 -0800
+Served asset /application.js - 304 Not Modified (0ms)
