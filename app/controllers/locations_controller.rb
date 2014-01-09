@@ -5,9 +5,10 @@ class LocationsController < ApplicationController
 
   def show
    @location = Location.find(params[:id])
-   @client = GooglePlaces::Client.new(AIzaSyD5i2AC5JHNBxRSx_hQ2qDpLjX58uXyTfg)
+   @client = GooglePlaces::Client.new("AIzaSyCbq5JAKHry5HROLhySw3r2BCIkPBlG5cc")
    # @places = @client.spots(-33.8670522, 151.1957362, :types => '@location.place')
    @places = @client.spots(-33.8670522, 151.1957362)
+   
   end
 
   def new

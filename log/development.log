@@ -1135,3 +1135,147 @@ NameError (uninitialized constant LocationsController::AIzaSyD5i2AC5JHNBxRSx_hQ2
   Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
   Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-08 20:31:23 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (undefined method `search' for #<GooglePlaces::Client:0x007f864facd3c0>):
+  app/controllers/locations_controller.rb:11:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.7ms)
+
+
+Started GET "/locations/4" for 127.0.0.1 at 2014-01-08 20:32:17 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "4"]]
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `details' for #<GooglePlaces::Client:0x007f864eb51108>):
+  app/controllers/locations_controller.rb:11:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2014-01-08 22:19:05 -0800
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7lbeG9lUcP2iOVV+EucXRUQx+hn6wIbGAS6DklccS3Y=", "location"=>{"address"=>"12622 Lido Way, Saratoga, CA", "latitude"=>"", "longitude"=>"", "places"=>"Food"}, "commit"=>"Create Location"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (48.5ms)[0m  INSERT INTO "locations" ("address", "created_at", "latitude", "longitude", "places", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["address", "12622 Lido Way, Saratoga, CA"], ["created_at", Thu, 09 Jan 2014 06:19:06 UTC +00:00], ["latitude", 37.2864379], ["longitude", -122.024625], ["places", "Food"], ["updated_at", Thu, 09 Jan 2014 06:19:06 UTC +00:00]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/5
+Completed 302 Found in 715ms (ActiveRecord: 53.4ms)
+
+
+Started GET "/locations/5" for 127.0.0.1 at 2014-01-08 22:19:06 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "5"]]
+Completed 500 Internal Server Error in 546ms
+
+GooglePlaces::RequestDeniedError (GooglePlaces::RequestDeniedError):
+  app/controllers/locations_controller.rb:10:in `show'
+
+
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/jchen/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/locations/5" for 127.0.0.1 at 2014-01-08 22:43:22 -0800
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mLocation Load (0.6ms)[0m  SELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 37.2864379) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -122.024625) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 37.2864379 AND locations.longitude >= -122.024625) THEN 45.0 WHEN (locations.latitude < 37.2864379 AND locations.longitude >= -122.024625) THEN 135.0 WHEN (locations.latitude < 37.2864379 AND locations.longitude < -122.024625) THEN 225.0 WHEN (locations.latitude >= 37.2864379 AND locations.longitude < -122.024625) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 37.141706116889154 AND 37.43116968311085 AND locations.longitude BETWEEN -122.20653639915534 AND -121.84271360084466 AND locations.id != 5) ORDER BY distance ASC
+  Rendered locations/show.html.erb within layouts/application (93.5ms)
+Completed 200 OK in 1217ms (Views: 579.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-08 22:43:24 -0800
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-01-08 22:43:24 -0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:24 -0800
+Served asset /jquery.js - 200 OK (54ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (40ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap.js - 200 OK (24ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /bootstrap.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-08 22:43:25 -0800
+Served asset /application.js - 200 OK (23ms)
