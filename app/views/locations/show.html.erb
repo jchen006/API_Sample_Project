@@ -16,11 +16,12 @@ Location
   <%= @location.places %>
 </p>
 <p>
-  <strong>Result:</strong>
-  <%= @places%>
+<ul>
+<% @places.each do |place| %> 
+  <li> <%= place.name %> </li>
+<% end %>
+</ul>
 </p>
-
-
 <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
 
 <h3>Nearby Locations</h3>

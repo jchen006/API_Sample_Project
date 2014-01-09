@@ -6,9 +6,11 @@ class LocationsController < ApplicationController
   def show
    @location = Location.find(params[:id])
    @client = GooglePlaces::Client.new("AIzaSyCbq5JAKHry5HROLhySw3r2BCIkPBlG5cc")
-   # @places = @client.spots(-33.8670522, 151.1957362, :types => '@location.place')
-   @places = @client.spots(-33.8670522, 151.1957362)
-   
+   # lat = @location.latitude.to_s
+   # long = @location.longitude.to_s
+   # @places = @client.spots(long, lat)
+   # @places = @client.spots(-33.8670522, 151.1957362) 
+   @places = @client.spots(37.2864379, -122.024625, :types => 'restaurant')
   end
 
   def new
