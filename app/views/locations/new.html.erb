@@ -1,5 +1,5 @@
-New Location
-
-<%= render 'form' %>
-
-<p><%= link_to "Back to List", locations_path %></p>
+<%- model_class = Location -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+<%= render :partial => 'form' %>
